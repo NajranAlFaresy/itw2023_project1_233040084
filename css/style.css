@@ -71,6 +71,7 @@ body {
   align-items: center;
   gap: 100px;
   border-bottom: 5px solid var(--sec-color);
+  letter-spacing: 2px;
 }
 
 .judul h1 {
@@ -107,6 +108,7 @@ nav {
   position: sticky;
   top: 0;
   border-bottom: 3px solid var(--oth-color);
+  z-index: 9;
 }
 
 ul {
@@ -169,16 +171,24 @@ div.content-about img {
 }
 
 .content-skill {
-  width: 100% ;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: grey;
-  border: 2px solid red;
+  border: 2px solid black;
   padding: 20px;
   border-radius: 8px;
   gap: 20px;
+}
+
+.img1 {
+  margin-top: 30px;
+}
+
+.content-skill .title-skill {
+  height: 200px;
 }
 
 .content-skill a {
@@ -329,14 +339,13 @@ section.contact {
 }
 
 .container-contact {
-    width: 100%;
-    
+  width: 100%;
 }
 
 .card-container {
   display: flex;
   align-items: center;
-  justify-content: spa;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -344,12 +353,12 @@ section.contact {
   display: flex;
   border-radius: 8px;
   margin-right: 120px;
-padding-right: 20px;
+  padding-right: 20px;
   flex: 1;
   height: 460px;
   background-color: grey;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .left {
@@ -372,7 +381,7 @@ padding-right: 20px;
 }
 
 .left p {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .left-container h2 {
@@ -389,10 +398,11 @@ padding-right: 20px;
 .left-container ul li a {
   color: blue;
   font-size: 1rem;
+  font-family: "poppins";
 }
 
 .right-container {
-    text-align: center;
+  text-align: center;
   width: 70%;
   height: 80%;
   text-align: center;
@@ -458,57 +468,124 @@ textarea {
 /* responsive */
 
 @media (max-width: 768px) {
- 
+  nav ul {
+    font-size: 0.6rem;
+    width: 50%;
+  }
+
+  header {
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: column-reverse;
+  }
+
+  header img {
+    width: 250px;
+  }
+
+  .content-about {
+    flex-direction: column;
+  }
+
+  .container-skill {
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  .card-skill {
+    flex-direction: column;
+  }
+
+  .content-skill {
+    height: 150px;
+    flex-direction: row;
+  }
+
+  .content-skill .title-skill {
+    width: 50%;
+    margin-top: 50px;
+  }
+
+  .content-skill h1 {
+    font-size: 1rem;
+  }
+
+  .content-hobby {
+    width: 200px;
+  }
+
+  .container-hobby img {
+    width: 200px;
+  }
+
+  .right {
+    margin-right: 20px;
+  }
+
+  .left-container p {
+    font-size: 1.5rem;
+  }
+
+  .left-container ul li a {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
 
     nav ul {
         font-size: 0.6rem;
-        width: 50%;
-    }
-
-    header {
-        font-weight: bold;
-        font-size: 20px;
-        flex-direction: column-reverse;
+        width: 70%;
       }
 
-      header img {
-        width: 250px;
-      }
+  .title-skill p {
+    display: none;
+  }
 
-      .content-about {
-          flex-direction: column;
-          margin-bottom: 150p;
-        }
-        
-        .container-skill {
-          height: auto;
-          width: 80%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 150px;
-        }
+  .content-skill {
+    flex-direction: column;
+    height: 300px;
+    padding: 0;
+    padding-bottom: 20px;
+  }
 
-      .card-skill {
-        flex-direction: column;
-      }
+  .content-hobby {
+    width: 90%;
+    margin-top: 1px;
+  }
 
-      .content-skill {
-        height: 150px;
-        flex-direction: row;
-      }
+  .container-hobby {
+    flex-direction: column;
+  }
 
-      .content-hobby {
-        width: 200px;
-      }
+  .container-hobby img {
+    width: 100%;
+    height: 200px;
+  }
 
-      .container-hobby img {
-        width: 200px;
-      }
+  .title-hobby {
+    width: 100%;
+    justify-content: center;
+  }
 
-      .right {
-        margin-right: 20px;
-      }
+  .card-container {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 100px;
+    gap: 20px;
+  }
+
+  .left-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .right {
+    width: 70%;
+  }
 
 
 }
