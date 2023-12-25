@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- my style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -43,11 +46,11 @@
         <p class="caveat sec">an <span>informatics engineering </span></p>
         <p class="caveat sec">student at <span>Pasundan University.</span></p>
         <div class="btn centeringtext">
-          <a href="" class="poppins sec animasiline">about me</a>
-          <a href="" class="poppins sec animasiline">contact me</a>
+          <a href="#about" class="poppins sec animasiline">about me</a>
+          <a href="#contact" class="poppins sec animasiline">contact me</a>
         </div>
       </div>
-      <img src="image/pngwing.com (4).png" alt="" />
+      <img src="image/pngwing.com (4).png" alt="" data-aos="zoom-in" />
     </header>
 
     <!-- header oke -->
@@ -55,11 +58,11 @@
     <!-- about me -->
 
     <section class="hero prima" id="about">
-      <div class="judul prima">
+      <div class="judul prima" data-aos="fade-up">
         <h1 class="sec bebas">ABOUT <span>ME</span></h1>
       </div>
       <div class="content-about centeringbox">
-        <img src="image/profile.jpg" alt="" />
+        <img src="image/profile.jpg" alt="" data-aos="zoom-in" />
         <div class="centeringtext">
           <p class="poppins sec">
             Hello! I am <span>Najran</span>, an
@@ -84,13 +87,13 @@
     <!-- skill  -->
 
     <section class="hero prima" id="skill">
-      <div class="judul prima">
+      <div class="judul prima" data-aos="fade-up">
         <h1 class="sec bebas">MY <span>SKILL</span></h1>
       </div>
 
       <div class="container-skill">
         <div class="card-skill">
-          <div class="content-skill">
+          <div class="content-skill" data-aos="fade-right">
             <img src="image/html.png" alt="" width="140px" class="img1" />
             <div class="title-skill">
               <a href="#" class="oth poppins centeringtext">
@@ -119,7 +122,7 @@
               </p>
             </div>
           </div>
-          <div class="content-skill">
+          <div class="content-skill" data-aos="fade-left">
             <img src="image/js.png" alt="" width="200px" />
             <div class="title-skill">
               <a href="#" class="oth poppins centeringtext">
@@ -142,20 +145,32 @@
     <!-- hoby -->
 
     <section class="hero prima" id="hobby">
-      <div class="judul prima">
+      <div class="judul prima" data-aos="fade-up">
         <h1 class="sec bebas">MY <span>HOBBY</span></h1>
       </div>
 
       <div class="container-hobby">
         <div class="content-hobby">
-          <img src="image/badminton.jpeg" alt="" width="300px" height="400px" />
+          <img
+            src="image/badminton.jpeg"
+            alt=""
+            width="300px"
+            height="400px"
+            data-aos="flip-right"
+          />
           <div class="title-hobby centeringtext">
             <h2 class="poppins sec">BADMINTON</h2>
             <p class="caveat sec">This sport is very sporty to play.</p>
           </div>
         </div>
         <div class="content-hobby">
-          <img src="image/futsal.jpeg" alt="" width="300px" height="400px" />
+          <img
+            src="image/futsal.jpeg"
+            alt=""
+            width="300px"
+            height="400px"
+            data-aos="flip-right"
+          />
           <div class="title-hobby centeringtext">
             <h2 class="poppins sec">FUTSAL</h2>
             <p class="caveat sec">
@@ -165,7 +180,13 @@
           </div>
         </div>
         <div class="content-hobby">
-          <img src="image/game.jpeg" alt="" width="300px" height="400px" />
+          <img
+            src="image/game.jpeg"
+            alt=""
+            width="300px"
+            height="400px"
+            data-aos="flip-right"
+          />
           <div class="title-hobby centeringtext">
             <h2 class="poppins sec">GAME</h2>
             <p class="caveat sec">fills my time when I'm free.</p>
@@ -179,7 +200,7 @@
     <!-- contact -->
 
     <section class="contact hero prima" id="contact">
-      <div class="judul prima">
+      <div class="judul prima" data-aos="fade-up">
         <h1 class="sec bebas">CONTACT <span>ME </span></h1>
       </div>
 
@@ -239,7 +260,10 @@
     </section>
     <!-- footer oke -->
 
-    <!-- js -->
-    <script src="script.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

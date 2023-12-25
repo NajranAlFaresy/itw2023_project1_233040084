@@ -335,7 +335,8 @@ button:hover {
 
 section.contact {
   font-size: 10px;
-  padding: 10px;
+  padding: 20px;
+  /* height: 100vh; */
 }
 
 .container-contact {
@@ -352,8 +353,7 @@ section.contact {
 .right {
   display: flex;
   border-radius: 8px;
-  margin-right: 120px;
-  padding-right: 20px;
+  margin-right: 20px;
   flex: 1;
   height: 460px;
   background-color: grey;
@@ -383,6 +383,7 @@ section.contact {
 .left p {
   font-size: 2rem;
 }
+
 
 .left-container h2 {
   font-size: 2rem;
@@ -434,6 +435,10 @@ button {
   text-transform: uppercase;
   transition: transform 80ms ease-out;
   cursor: pointer;
+}
+
+.left-container ul li a:hover {
+    color:#00b4cf;
 }
 
 button:hover {
